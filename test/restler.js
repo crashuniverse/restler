@@ -110,7 +110,7 @@ module.exports['Basic'] = {
     });
   },
 
-  'Should GET withouth path': function(test) {
+  'Should GET without path': function(test) {
     rest.get(host).on('complete', function(data) {
       test.re(data, /^GET \//, 'should hit /');
       test.done();
